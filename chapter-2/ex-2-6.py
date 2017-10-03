@@ -10,25 +10,26 @@
 
 
 # Constants for the state and county tax rates
-
+STATE_TAX_RATE = 0.06
+COUNTRY_TAX_RATE = 0.02
 
 # Get the amount of purchase from the user, casting it to a float.
-
+sales_total = float(input("Enter sales total: "))
 
 # Calculate the state sales tax.
-
+state_tax = sales_total * STATE_TAX_RATE
 
 # Calculate the county sales tax.
-
+country_tax = sales_total * COUNTRY_TAX_RATE
 
 # Sum the total tax.
-
+total_tax = country_tax + state_tax
 
 # Calculate the total of the sale.
-
+total = total_tax + sales_total
 
 # Print detailed information about the sale, formatting all values to two decimal places.
-
+print('The total is $ %.2f' %total)
 
 
 
