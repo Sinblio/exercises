@@ -36,3 +36,24 @@
 
 # else print "A and B are equal" message.
 
+length_A = float(input("Enter rectangle A's length: "))
+width_A = float(input("Enter rectangle A's width: "))
+length_B = float(input("Enter rectangle B's length: "))
+width_B = float(input("Enter rectangle B's width: "))
+
+area_a = length_A * width_A
+area_b = length_B * width_B
+
+if area_a > area_b :
+    out = "The Area of A is greater than the Area of B"
+elif area_b > area_a :
+    out = "The Ares of B is greater than the Area of A"
+else :
+    out = "The Areas of both A and B are equal"
+
+area_a = "{0:.2f}".format(area_a)
+area_b = "{0:.2f}".format(area_b)
+
+print("Area A : " + area_a)
+print("Area B : " + area_b)
+print(out)

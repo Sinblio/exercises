@@ -15,11 +15,20 @@
 # Determine if the person is an infant, child, teenager, or adult and set the category.
 # Use a series of if ... elif ... etc. statements.
 
-
-
-
-
 # display a message with the age category.
 
+age = 0
+category = ""
 
+age = int(input("Enter your age : "))
 
+if (age < 2) :
+    category = "Infant"
+elif (age < 12) :
+    category = "Child"
+elif (age < 18) :
+    category = "Teenager"
+else :
+    category = "Adult"
+    
+print(category)
