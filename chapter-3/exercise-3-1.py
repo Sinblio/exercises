@@ -39,5 +39,3 @@ else :
 # display the name of the day on the screen.
 
 print(name_of_day)
-
-

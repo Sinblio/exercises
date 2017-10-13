@@ -22,3 +22,12 @@
 
     # display the minutes and calories burned using two tabs between the values
 
+CALORIES_PER_MINUTE = 9
+minutes = 13
+
+print("Minutes\t\tCalories Burned")
+print("-------\t\t---------------")
+
+for x in range(minutes) :
+    calories_burned = (x + 1) * CALORIES_PER_MINUTE
+    print(str((x + 1)) + "\t\t" + str(calories_burned))
