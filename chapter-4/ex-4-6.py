@@ -8,23 +8,22 @@
 
 # Declare a float variable to hold the Fahrenheit temperature.
 
-
 # Declare a constant to hold the max celsius value
-
 
 # Display a table header with Celsius and Fahrenheit separated by two tabs.
 # Display a line separator made of underscores
 
-
-
 # Use a for loop to iterate from 0 through the range of Celsius temperatures
-
 
 # 	Calculate the Fahrenheit temperature for the current Celsius value
 
 #	Display the current Celsius and Fahrenheit values, separated by two tabs
 
+MAX_CELSIUS = 100
 
+print("Celsius\t\tFahrenheit")
+print("-------\t\tFahrenheit")
 
-
-
+for x in range(MAX_CELSIUS) :
+    fahrenheit = x * 9 / 5 + 32
+    print(str(x) + "\t\t" + str(fahrenheit))

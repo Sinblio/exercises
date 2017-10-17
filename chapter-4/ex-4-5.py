@@ -10,8 +10,6 @@
 
 # Create int variables for number of years and number of months.
 
-
-
 # Get number of years from the user
 
 # Nested loop logic to loop through the years and their months
@@ -34,3 +32,18 @@
 # print the results on the screen, including details for total months, total rainfall,
 #	and average monthly rainfall, formatting any floats to 2 decimal places.
 
+total_rainfall = 0
+
+years = int(input("Enter the number of years : "))
+
+for j in range(years) :
+	print("Year " + str((j + 1)))
+	for k in range(12) :
+		total_rainfall += int(input("Enter the average rainfall : "))
+		
+average_rainfall = total_rainfall / (years * 12)
+
+average_rainfall = "{0:.2f}".format(average_rainfall)
+
+print("Total rainfall : " + str(total_rainfall))
+print("Average rainfall : " + average_rainfall)
