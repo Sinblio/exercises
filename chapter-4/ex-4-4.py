@@ -13,10 +13,8 @@
     
 # Get time traveled as input and cast it appropriately
 
-
 # Display the table header: Hour and Distance separated by a tab
 # Display an separator line composed of underscores
-
 
 # Use a for loop to iterate over the range of hours
 
@@ -24,5 +22,10 @@
 
     # Display the current hour and distance traveled, separated by a tab
 
+speed = int(input("Enter the speed you are traveling : "))
+time = int(input("Enter the hours you are traveling : "))
 
+print("hour\t\tDistance")
 
+for x in range(1, time + 1) :
+    print(str(x) + "\t\t" + str(x * speed))

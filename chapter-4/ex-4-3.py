@@ -23,12 +23,9 @@
 
     # add the amount spent to the total spent
 
-
-
 # outside the loop, set the difference to hold budget - total spent
 
 # Display a message with the total spent formatted to two decimal places
-
 
 # if over budget, display a message with the difference formatted to two places.
 
@@ -36,4 +33,21 @@
 
 # else display message stating that spending and budget were equal.
 
+budget = int(input("Enter your budget : "))
+amount_spent = -1
+total_spent = 0
 
+while amount_spent != 0 :
+    amount_spent = int(input("Enter the amount spent : "))
+    total_spent += amount_spent
+    
+difference = budget - total_spent
+
+print("You spent $" + str(total_spent) + " total")
+
+if difference > 0 :
+    print("You are under budget")
+elif difference < 0 :
+    print("You are over budget")
+else :
+    print("You are at budget")
