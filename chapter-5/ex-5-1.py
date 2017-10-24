@@ -17,8 +17,6 @@
 
     # pass the distance in kilometers to a function to convert to miles
 
-
-
 # define the function to convert to miles
 # the function takes kilometers as an argument
 # calculates the equivalent number of miles
@@ -30,7 +28,18 @@
     
     # print the results, formatting float values to 2 decimal places
 
-
-
 # Call the main function to start the program
 
+KM_TO_MILES = 0.621
+
+def main() :
+    kilometers = int(input("Enter the Kilometers : "))
+    miles = convert_to_miles(kilometers)
+    miles = format(miles, ".2f")
+    print(str(miles) + " miles")
+
+def convert_to_miles(kilometers) :
+    miles = kilometers * KM_TO_MILES
+    return miles;
+    
+main()

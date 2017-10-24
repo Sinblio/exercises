@@ -45,12 +45,8 @@ def  main() :
     
     display_calories(calories_from_fat, calories_from_carbs)
     
-    return;
-    
 def display_calories(fat_calories, carb_calories) :
     print(str(fat_calories) + " calories from fat")
     print(str(carb_calories) + " calories from carbs")
-    
-    return;
     
 main()

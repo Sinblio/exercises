@@ -39,9 +39,16 @@ PROPERTY_TAX_RATE = .65
 def main() :
     property_value = int(input("Enter the property value : "))
     
-    assessed_value = 0
-    property_tax = 0
+    assessed_value = property_value * ASSESMENT_PERCENT
+    property_tax = property_value * PROPERTY_TAX_RATE
     
+    display_calc(assessed_value, property_tax)
     
+def display_calc(assessed_value, property_tax) :
+    assessed_value = format(assessed_value, ".2f")
+    property_tax = format(property_tax, ".2f")
+    
+    print("Your assesed value is : " + assessed_value)
+    print("Your property tax is : " + property_tax)
 
 main()
